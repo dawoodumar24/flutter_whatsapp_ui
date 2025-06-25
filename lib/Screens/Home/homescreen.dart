@@ -21,12 +21,11 @@ class homeScreen extends StatelessWidget {
             Tab(text: "Call logs",)
           ],indicatorColor: Colors.white,
           ),
-          toolbarHeight: 100,
-          title: UiHelper.customText(text: "Whatsapp", height: 21, color: Color(0XFFFFFFFF)),
+          toolbarHeight: 70,
+          title: UiHelper.customText(text: "Whatsapp", height: 21, color: Color(0XFFFFFFFF),fontweight: FontWeight.bold),
           actions: [
-            Padding(
-              padding: const EdgeInsets.only(right: 20),
-              child: IconButton(onPressed: (){}, icon: Image.asset("assets/images/Search.png")),
+               IconButton(onPressed: (){}, icon: Image.asset("assets/images/Search.png")),
+              IconButton(onPressed: (){}, icon: Icon(Icons.more_vert_sharp)
             ),
           ],
         ),
